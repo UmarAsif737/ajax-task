@@ -1,0 +1,21 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  color: maroon;
+  font-weight: normal;
+}
+
+#location-results {
+  width: 25%;
+  height: 50%;
+  overflow: scroll;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: silver;
+  padding: 30px;
+
+}
