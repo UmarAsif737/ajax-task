@@ -48,11 +48,19 @@ function secondResponse(evnt) {
   let displayTarget = evnt.target.response;
   let contentPara = document.querySelector("#location-results");
   contentPara.innerHTML = "";
+  console.log(displayTarget);
   for (let art of displayTarget.body.art) {
+    let title = document.createElement("b");
+    let titleText = document.createTextNode("Title: " + art.title.display);
+    title.appendChild(titleText);
+    contentPara.appendChild(title);
     let para = document.createElement("p");
-    let paraText = document.createTextNode(art.location.description);
+    let paraText = document.createTextNode(
+      "Location: " + art.location.description
+    );
     para.appendChild(paraText);
     contentPara.appendChild(para);
+    contentPara.appendChild(document.createElement("br"));
   }
 }
 function secondRequest(href) {

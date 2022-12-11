@@ -5,17 +5,25 @@ body {
 
 h1 {
   color: maroon;
-  font-weight: normal;
+  font-weight: bold;
+}
+
+li {
+  cursor: pointer;
+  width: fit-content;
+}
+
+li:active {
+  background-color: aqua;
 }
 
 #location-results {
   width: 25%;
   height: 50%;
-  overflow: scroll;
   position: fixed;
-  top: 20px;
-  right: 20px;
-  background-color: silver;
+  top: 100px;
+  right: 300px;
+  background-color: rgb(218, 216, 216);
+  border-radius: 10px;
   padding: 30px;
-
 }
